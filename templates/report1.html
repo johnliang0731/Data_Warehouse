@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block content %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 id="dashboard-name" class="h2">
+      Report 1 - Manufacturer’s Product Report
+    </h1>
+  </div>
+
+  <div>
+    <table id='report1-table1'>
+    </table>
+  
+    <!-- Select Manufacturer Dropdown -->
+    <p><b>Please select ONE manufacturer to view its maximum discount:</b></p>
+    <select id='report1-manufacturerlist' class="browser-default custom-select">
+      <option value="" disabled selected>Select Manufacturer</option>
+    </select>
+    <table id='report1-table2' data-toggle="table">
+      <thead>
+        <tr>
+          <th data-field='ManufacturerName'>Manufacturer Name</th>
+          <th data-field='MaxDiscount'>Max Discount</th>
+        </tr>
+      </thead>
+    </table>
+    <br>
+    <br>
+    <button id='report1-viewdetail' class='myButton'>View Drill-down Details <i class="fas fa-caret-down"></i></button>
+    <br>
+    <table id='report1-table3' data-toggle="table">
+      <thead>
+        <tr>
+          <th data-field='ManufacturerName'>Manufacturer Name</th>
+          <th data-field='MaxDiscount'>Max Discount</th>
+          <th data-field='PID'>PID</th>
+          <th data-field='ProductName'>Product Name</th>
+          <th data-field='RetailPrice'>Retail Price</th>
+          <th data-field='CategoryName'>Category Name</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div>
+    <a href="/" class="previous">&laquo; Back to Main Menu</a>
+  </div>
+</main>
+{% endblock %}

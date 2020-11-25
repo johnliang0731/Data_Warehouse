@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% block content %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 id="dashboard-name" class="h2">
+      Report4 - Store Revenue by Year by State
+    </h1>
+  </div>
+    <!--Add your content here-->
+  <div>
+    <!-- Select Manufacturer Dropdown -->
+    <p><b>Please select ONE state to view its store revenue:</b></p>
+    <select id='report4-statelist' class="browser-default custom-select">
+      <option value="" disabled selected>Select State</option>
+    </select>
+    <table id='report4-table2' data-toggle="table">
+      <thead>
+        <tr>
+          <th data-field='StoreNumber'>Store Number</th>
+          <th data-field='StreetAddress'>Street Address</th>
+          <th data-field='CityName'>City Name</th>
+          <th data-field='year_sold'>Year Sold</th>
+          <th data-field='revenue'>Revenue</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div>
+    <a href="/" class="previous">&laquo; Back to Main Menu</a>
+  </div>
+</main>
+{% endblock %}

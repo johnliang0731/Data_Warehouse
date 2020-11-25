@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+{% block content %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 id="dashboard-name" class="h2">
+      Report6
+    </h1>
+  </div>
+    <!--Add your content here-->
+
+  <table id="table">
+  </table>
+
+  <div id="report6-management-container">
+    <form>
+      <div id="holiday-management-container-child" class="row">
+        <div class="form-group">
+          <label for="report6-year-input">Year:</label>
+          <input type="text" class="form-control" id="report6-year-input">
+        </div>
+        <div class="form-group">
+          <label for="report6-month-input">Month:</label>
+          <input type="text" class="form-control" id="report6-month-input">
+        </div>
+      </div>
+    </form>
+
+    <div>
+      <button type="button" class="btn btn-primary" id="report6-submit-button">Submit</button>
+    </div>
+  </div>
+
+  <div>
+    <a href="/" class="previous">&laquo; Back to Main Menu</a>
+  </div>
+
+</main>
+{% endblock %}

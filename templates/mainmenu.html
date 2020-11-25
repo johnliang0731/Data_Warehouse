@@ -1,0 +1,73 @@
+{% extends "index.html" %}
+{% block content %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 id="dashboard-name" class="h2">
+      Main Menu
+    </h1>
+  </div>
+  <table id="table">
+  </table>
+
+  <table id="sub-table">
+  </table>
+
+  <div id="holiday-management-container" class="hidden">
+    <form>
+      <div id="holiday-management-container-child" class="row">
+        <div class="form-group">
+          <label for="holiday-year-input">Year:</label>
+          <input type="text" class="form-control" id="holiday-year-input">
+        </div>
+        <div class="form-group">
+          <label for="holiday-month-input">Month:</label>
+          <input type="text" class="form-control" id="holiday-month-input">
+        </div>
+        <div class="form-group">
+          <label for="holiday-day-input">Day:</label>
+          <input type="text" class="form-control" id="holiday-day-input">
+        </div>
+        <div class="form-group">
+          <label for="holiday-name-input">Holiday Name:</label>
+          <input type="text" class="form-control" id="holiday-name-input">
+        </div>
+      </div>
+    </form>
+
+    <div>
+      <button type="button" class="btn btn-primary" id="add-holiday-button">Add</button>
+      <button type="button" class="btn btn-success" id="update-holiday-button">Update</button>
+      <button type="button" class="btn btn-danger" id="delete-holiday-button">Delete</button>
+    </div>
+  </div>
+
+
+
+<div id="city-population-section" class="hidden">
+
+	<br>
+
+	<h3>Update Population of City</h3>
+
+  <form id="city-population-input">
+  		<div class="form-group">
+  			<label>City & State</label>
+  			<select id='city-citySelectLIst' name='state-select' class="form-control col-3">
+	  			<option value="" disabled selected>Select City</option>
+	  		</select>
+  		</div>
+
+    	<div class="form-group">
+    		<label>New Population</label>
+	  		<input type="number" name="new_population" id="inputPopulation" placeholder="Input New Population" class="form-control col-3">
+    	</div>
+
+      <button type="button" class="btn btn-primary" id="change-population-button">Submit</button>
+	</form>
+
+  <br>
+
+</div>
+
+</main>
+{% endblock %}

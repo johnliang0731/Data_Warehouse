@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+{% block content %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 id="dashboard-name" class="h2">
+      Report 8 - Membership Trends Report
+    </h1>
+  </div>
+
+  <div>
+    <table id='report8-table1'>
+    </table>
+  
+    <!-- Select Year Dropdown -->
+    <select id='report8-yearlist' class="browser-default custom-select">
+      <option value="" disabled selected>Select Year</option>
+    </select>
+    <br>
+    <br>
+    
+    <table id='report8-table2' data-toggle="table">
+        <caption>Top 25</caption>
+        <thead>
+        <tr>
+          <th data-field='CityName'>City Name</th>
+          <th data-field='State'>State</th>
+          <th data-field='CountMemberID'>Count Member ID</th>
+        </tr>
+        </thead>
+    </table>
+    <br>
+    <br>
+    <table id='report8-table3' data-toggle="table">
+        <caption>Bottom 25</caption>
+        <thead>
+        <tr>
+          <th data-field='CityName'>City Name</th>
+          <th data-field='State'>State</th>
+          <th data-field='CountMemberID'>Count Member ID</th>
+        </tr>
+        </thead>
+    </table>
+    <br>
+    <br>
+    <!-- Select (City, State) Dropdown -->
+    <select id='report8-citystatelist' class="browser-default custom-select">
+    </select>
+    <br>
+    <br>
+    <table id='report8-table4' data-toggle="table">
+        <thead>
+        <tr>
+          <th data-field='CountMemberID'>Count Member ID</th>
+          <th data-field='CityName'>City Name</th>
+          <th data-field='State'>State</th>
+          <th data-field='StoreNumber'>Store Number</th>
+          <th data-field='StreetAddress'>Street Address</th>
+        </tr>
+        </thead>
+    </table>
+    
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+  <div>
+    <a href="/" class="previous">&laquo; Back to Main Menu</a>
+  </div>
+</main>
+{% endblock %}
