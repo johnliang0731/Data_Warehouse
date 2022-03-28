@@ -1,6 +1,8 @@
 # Team Project - Data Warehouse
 ## Overview
-This is a dababase course project. This project is to build a data warehouse for an up-and-coming club store. This data warehouse could save the information of the stores, locations, products, business transactions and membership information. This data warehouse system could also report and analyze all the records in database, generate required reports.
+This is a dababase course project from the course of CS6400 - Database System Concept & Design in Georgia Institute of Technology in Fall 2020 semester
+
+This project is to build a data warehouse for an up-and-coming club store. This data warehouse could save the information of the stores, locations, products, business transactions and membership information. This data warehouse system could also report and analyze all the records in database, generate required reports.
 
 This project is developed in Python with the framework of Flask. MySQL is selected as the database for this project, project is running in Docker. Other applied technics including Jquery, Bootstrap, CSS and HTML.
 ## Installation Instruction
