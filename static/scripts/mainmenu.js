@@ -11,6 +11,7 @@ $(document).ready(function(){
   $("#report-link-stores").off('click').on("click", function() {
     activateNavLink($(this));
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $('#city-population-section').hide();
     $('#table').bootstrapTable('refreshOptions', {
         url: '/Stores',
@@ -53,6 +54,7 @@ $(document).ready(function(){
   $("#report-link-manufacturers").off('click').on("click", function() {
     activateNavLink($(this));
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $('#city-population-section').hide();
     $('#table').bootstrapTable('refreshOptions',{
         url: '/Manufacturer',
@@ -86,6 +88,7 @@ $(document).ready(function(){
   $("#report-link-products").off('click').on("click", function() {
     activateNavLink($(this));
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $('#city-population-section').hide();
     $('#table').bootstrapTable('refreshOptions', {
       url: '/Product',
@@ -123,6 +126,7 @@ $(document).ready(function(){
     activateNavLink($(this));
     $('#city-population-section').hide();
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $('#table').bootstrapTable('refreshOptions', {
       url: '/MembershipsSold',
       pagination: true,
@@ -157,6 +161,7 @@ $(document).ready(function(){
     $(".row").css("margin-left", "0");
     $("#holiday-management-container").removeClass("hidden");
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $('#sub-table').hide();
     $('#city-population-section').hide();
     $('#table').bootstrapTable('refreshOptions', {
@@ -244,6 +249,7 @@ $(document).ready(function(){
     activateNavLink($(this));
     $("#city-population-section").removeClass("hidden");
     $('#table').show();
+    $('#menu-list').addClass("hidden");
     $("#city-population-section").removeClass("hidden");
     $("#city-population-section").show();
     $('#sub-table').hide();
